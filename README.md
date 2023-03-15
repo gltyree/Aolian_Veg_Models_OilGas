@@ -25,20 +25,20 @@ Site selection: We identified disturbed and undisturbed sites from five climate-
 1. USUh_data_v2.csv
 2. Study_sites.zip
 
-# USUh_data_v2.csv - column descriptions
-UID: Unique identifier of the spatial point for which the data were retrieved. Corresponds with 'UID' in Study_sites.zip.  
+# Column descriptions
+UID (both files): Unique identifier of the spatial point for which the data were retrieved.
 
-Stratum: The climate-soil-geomorphic group that a given site falls within. The climate-soil-geomorphic groups are sourced from USGS maps of Ecological Site Groups and Soil-Geomorphic Units for the Upper Colorado River Basin (Nauman et al. 2022). ALU = Arid-warm Loamy Uplands, ASH = Arid-warm Saline Hills, SFU = Semiarid-warm Finer Uplands, SLU = Semiarid-warm Loamy Uplands, SVS = Semiarid-warm Very Shallow. 
+Stratum (both files): The climate-soil-geomorphic group that a given site falls within. The climate-soil-geomorphic groups are sourced from USGS maps of Ecological Site Groups and Soil-Geomorphic Units for the Upper Colorado River Basin (Nauman et al. 2022). ALU = Arid-warm Loamy Uplands, ASH = Arid-warm Saline Hills, SFU = Semiarid-warm Finer Uplands, SLU = Semiarid-warm Loamy Uplands, SVS = Semiarid-warm Very Shallow. 
 
-featTyp: Presence or absence of oil and gas disturbance in the MODIS pixel that the site falls within. As a 16-year time series of us*/Uh is retrieved for each pixel, 'featTyp' of many pixels changes over time from "undisturbed" to "disturbed"; this change corresponds to the value in 'spuddate'. 
+featTyp (both files): Presence or absence of oil and gas disturbance in the MODIS pixel that the site falls within. As a 16-year time series of us*/Uh is retrieved for each pixel, 'featTyp' of many pixels changes over time from "undisturbed" to "disturbed"; this change corresponds to the value in 'spuddate'. 
 
-spuddate: The date of "spudding" or initial drilling of the well bore, which approximates the initial date of oil and gas disturbance for the pixel. Spud dates of '1/1/1999' indicate that wells in that pixel lacked a spud date record, but the date of initial disturbance was determined to have occurred prior to the year 2000 using the LandTrendr tool (Kennedy et al. 2010).
+spuddate (both files): The date of "spudding" or initial drilling of the well bore, which approximates the initial date of oil and gas disturbance for the pixel. Spud dates of '1/1/1999' indicate that wells in that pixel lacked a spud date record, but the date of initial disturbance was determined to have occurred prior to the year 2000 using the LandTrendr tool (Kennedy et al. 2010).
 
-Date: The year and month of us*/Uh retrieval. 
+Date (CSV only): The year and month of us*/Uh retrieval. 
 
-USUh: us*/Uh data retrieved from MODIS albedo using the CW16 model. Values are monthly means. 
+USUh (CSV only): us*/Uh data retrieved from MODIS albedo using the CW16 model. Values are monthly means. 
 
-n: The size of the sample (Stratum x featTyp) for the given date. 
+n (CSV only): The size of the sample (Stratum x featTyp) for the given date. 
 
 # References
 Chappell, A. & Webb, N.P. (2016). Using albedo to reform wind erosion modelling, mapping and monitoring. Aeolian Research, 23, 63-78. https://doi.org/10.1016/j.aeolia.2016.09.006.
