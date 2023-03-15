@@ -40,6 +40,10 @@ USUh (CSV only): us*/Uh data retrieved from MODIS albedo using the CW16 model. V
 
 n (CSV only): The size of the sample (Stratum x featTyp) for the given date. 
 
+# Notes
+NSF Grant # 1853853
+Title: Collaborative Research: NSFGEO-NERC: Aeolian dust responses to regional ecosystem change
+
 # References
 Chappell, A. & Webb, N.P. (2016). Using albedo to reform wind erosion modelling, mapping and monitoring. Aeolian Research, 23, 63-78. https://doi.org/10.1016/j.aeolia.2016.09.006.
 
